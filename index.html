@@ -2,885 +2,926 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-    <link href="src/css/styles.css" rel="stylesheet">
-    <title>Document</title>
+    <!--====== Required meta tags ======-->
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!--====== Title ======-->
+    <title> Welcome to Sunrise Eco Homes</title>
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="sunrise-img/logo.jpg" type="img/png" />
+    <!--====== Animate Css ======-->
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <!--====== Bootstrap css ======-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!--====== Fontawesome css ======-->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+    <!--====== Flaticon css ======-->
+    <link rel="stylesheet" href="assets/css/flaticon.css" />
+    <!--====== Magnific Popup css ======-->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+    <!--====== Owl Carousel css ======-->
+    <link rel="stylesheet" href="assets/css/slick.css" />
+    <!--====== Nice Select ======-->
+    <link rel="stylesheet" href="assets/css/nice-select.css" />
+    <!--====== Bootstrap Datepicker ======-->
+    <link rel="stylesheet" href="assets/css/bootstrap-datepicker.css" />
+    <!--====== Default css ======-->
+    <link rel="stylesheet" href="assets/css/default.css" />
+    <!--====== Style css ======-->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+
+    <style>
+        .testimonial-box {
+            background: #f9f9f9;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .testimonial-box h3 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-top: 15px;
+        }
+
+        .testimonial-box .clinet-post {
+            font-size: 14px;
+            color: #777;
+        }
+
+        .testimonial-box p {
+            font-size: 15px;
+            color: #555;
+            margin-top: 15px;
+            flex-grow: 1;
+        }
+    </style>
 </head>
 
 <body>
+    <!--[if lte IE 9]>
+		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+    <!--====== PRELOader ======-->
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="cssload-container">
+            <div class="cssload-loading"><i></i><i></i><i></i><i></i></div>
+        </div>
+    </div>
 
-    <nav class="topbar">
-        <div class="topbar__container">
-            <div class="topbar__container__images">
-                <div class="burger__container">
-                    <img class="burger burger--open" src="./src/assets/icons/burger.svg">
+    <!--====== HEADER START ======-->
+    <header class="header-absolute header-two sticky-header">
+        <div class="container container-custom-one">
+            <div class="nav-container d-flex align-items-center justify-content-between justify-content-lg-around">
+                <!-- Site Logo -->
+                <div class="site-logo">
+                    <a href="index.html" class="main-logo"><img src="sunrise-img/logo.jpg" alt="Logo"
+                            style="width: 110px;border-radius: 5px;"></a>
+                    <a href="index.html" class="sticky-logo"><img src="sunrise-img/logo.jpg" alt="Logo"
+                            style="width: 110px;"></a>
                 </div>
-                <div class="logo">
-                    <div class="logo__back">
-                        <p class="logo__letter">H</p>
+
+
+                <!-- Main Menu -->
+                <div class="nav-menu d-lg-flex align-items-center">
+
+                    <!-- Navbar Close Icon -->
+                    <div class="navbar-close">
+                        <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
                     </div>
-                    <img class="logo__wordmark" src="./src/assets/icons/wordmark.svg">
+
+                    <!-- Off canvas Menu  -->
+                    <!-- <div class="toggle">
+                        <a href="#" id="offCanvasBtn"><i class="fal fa-bars"></i></a>
+                    </div> -->
+                    <!-- Mneu Items -->
+                    <div class="menu-items">
+                        <ul>
+                            <li>
+                                <a href="index.html">Home</a>
+
+                            </li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li>
+                                <a href="index.html#rooms">Rooms</a>
+                                <ul class="submenu">
+                                    <li><a href="deluxe-room.html">Deluxe Room</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- from pushed-item -->
+                    <div class="nav-pushed-item"></div>
                 </div>
-            </div>
-            <div class="topbar__nav--desktop">
-                <ul class="topbar__nav__list">
-                    <li class="topbar__nav__anchor"><a class="topbar__nav__anchor__a" href="./about-us.html">About
-                            Us</a></li>
-                    <li class="topbar__nav__anchor"><a class="topbar__nav__anchor__a" href="./room-grid.html">Rooms</a>
-                    </li>
-                    <li class="topbar__nav__anchor"><a class="topbar__nav__anchor__a"
-                            href="./room-offers.html">Offers</a></li>
-                    <li class="topbar__nav__anchor"><a class="topbar__nav__anchor__a" href="./details.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="topbar__container__buttons">
-                <button class="icon-button"><img src="./src/assets/icons/user.svg"></button>
-                <button class="icon-button"><img src="./src/assets/icons/search.svg"></button>
+
+
+
+                <!-- Header Info Pussed To Menu Wrap -->
+                <div class="nav-push-item">
+                    <!-- Header Info -->
+                    <div class="header-info d-lg-flex align-items-center">
+                        <div class="item">
+                            <i class="fal fa-phone"></i>
+                            <span>Phone Number</span>
+                            <a href="tel:+91 8249724355">
+                                <h5 class="title">+91 8249724355</h5>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <i class="fal fa-envelope"></i>
+                            <span>Email Address</span>
+                            <a href="mailto:sunriseecohome@gmail.com">
+                                <h5 class="title">sunriseecohome@gmail.com</h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navbar Toggler -->
+                <div class="navbar-toggler">
+                    <span></span><span></span><span></span>
+                </div>
             </div>
         </div>
-        <div class="topbar__nav">
-            <ul class="topbar__nav__list">
-                <li class="topbar__nav__anchor"><a class="topbar__nav__anchor__a" href="./about-us.html">About
-                        Us</a></li>
-                <li class="topbar__nav__anchor"><a class="topbar__nav__anchor__a" href="./room-grid.html">Rooms</a>
+    </header>
+    <!--====== HEADER END ======-->
+
+
+    <!--====== OFF CANVAS START ======-->
+    <div class="offcanvas-wrapper">
+        <div class="offcanvas-overly"></div>
+        <div class="offcanvas-widget">
+            <a href="#" class="offcanvas-close"><i class="fal fa-times"></i></a>
+
+
+
+            <!-- Nav Widget -->
+            <div class="widget nav-widget">
+                <h5 class="widget-title">Our pages</h5>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="menu.html">Food Menu</a></li>
+                    <li><a href="restaurant.html">Restaurant</a></li>
+                    <li>
+                        <a href="places.html">Places</a>
+                        <ul class="submenu">
+                            <li><a href="places-details.html">Places Details</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="offers.html">Offers</a></li>
+                    <li><a href="gallery.html">Our Gallery</a></li>
+                    <li><a href="search-result.html">Search Result</a></li>
+                    <li><a href="booking.html">Booking</a></li>
+                </ul>
+            </div>
+            <!-- Social Link -->
+            <div class="widget social-link">
+                <h5 class="widget-title">Contact with us</h5>
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fab fa-google"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--====== OFF CANVAS END ======-->
+
+
+    <!--====== BANNER PART START ======-->
+    <section class="banner-area banner-style-two" id="bannerSlider">
+        <div class="single-banner d-flex align-items-center justify-content-center">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="banner-content text-center">
+                            <span class="promo-tag" data-animation="fadeInDown" data-delay=".6s"> An Eco-Friendly Nature
+                                Retreat
+                            </span>
+                            <h1 class="title" data-animation="fadeInLeft" data-delay=".9s"> Welcome to <br>Sunrise Eco
+                                Homes
+                            </h1>
+                            <ul>
+                                <li data-animation="fadeInUp" data-delay="1.1s">
+                                    <a class="main-btn btn-filled" href="#">take a tour</a>
+                                </li>
+                                <li data-animation="fadeInUp" data-delay="1.3s">
+                                    <a class="main-btn btn-border" href="#">Learn More</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- banner bg -->
+            <div class="banner-bg" style="background-image: url(sunrise-img/exterior/1.jpg);"></div>
+            <div class="banner-overly"></div>
+        </div>
+        <div class="single-banner d-flex align-items-center justify-content-center">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="banner-content text-center">
+                            <span class="promo-tag" data-animation="fadeInDown" data-delay=".6s"> Escape to Daringbadi
+                                experience</span>
+                            <h1 class="title" data-animation="fadeInLeft" data-delay=".9s">The Luxury of Simplicity
+                            </h1>
+                            <ul>
+                                <li data-animation="fadeInUp" data-delay="1.1s">
+                                    <a class="main-btn btn-filled" href="#">take a tour</a>
+                                </li>
+                                <li data-animation="fadeInUp" data-delay="1.3s">
+                                    <a class="main-btn btn-border" href="#">Learn More</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- banner bg -->
+            <div class="banner-bg" style="background-image: url(sunrise-img/exterior/16.jpeg);"></div>
+            <div class="banner-overly"></div>
+        </div>
+    </section>
+    <!--====== BANNER PART ENDS ======-->
+    <!--====== BOOKING FORM START ======-->
+    <section class="booking-form">
+        <div class="container">
+            <div class="booking-form-inner">
+                <form action="#">
+                    <div class="row align-items-end">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="inputs-filed mt-30">
+                                <label for="arrival-date">Arrival Date</label>
+                                <div class="icon"><i class="fal fa-calendar-alt"></i></div>
+                                <input type="text" placeholder="24th march 2020" name="arrival-date" id="arrival-date">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="inputs-filed mt-30">
+                                <label for="departure-date">Departure Date</label>
+                                <div class="icon"><i class="fal fa-calendar-alt"></i></div>
+                                <input type="text" placeholder="30th march 2020" name="departure-date"
+                                    id="departure-date">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="inputs-filed mt-30">
+                                <label for="guests">Guests</label>
+                                <select name="guests" id="guests">
+                                    <option value="" disabled selected>Select From Here</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="4">4</option>
+                                    <option value="8">8</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="inputs-filed mt-30">
+                                <button type="submit">check availability</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!--====== BOOKING FORM END ======-->
+    <!-- About Us Page -->
+
+    <section class="about-section pt-115 pb-115">
+        <div class="container">
+            <div class="down-arrow-wrap text-center">
+                <a href="#" class="down-arrow"><i class="fal fa-arrow-down"></i></a>
+            </div>
+            <div class="section-title about-title text-center mb-20">
+                <span class="title-tag">Reconnect with <span>Nature</span></span>
+                <h2>Experience the Tranquility of Daringbadi's Finest Eco Retreat</h2>
+            </div>
+            <ul class="about-features masonry-layout">
+                <li class="wow fadeInUp" data-wow-delay=".3s"
+                    style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                    <a href="#">
+                        <i class="flaticon-coffee"></i>
+                        <i class="hover-icon flaticon-coffee"></i>
+                        <span class="title">breakfast</span>
+                    </a>
                 </li>
-                <li class="topbar__nav__anchor"><a class="topbar__nav__anchor__a" href="./room-offers.html">Offers</a>
+                <li class="wow fadeInUp" data-wow-delay=".5s"
+                    style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                    <a href="#">
+                        <i class="flaticon-air-freight"></i>
+                        <i class="hover-icon flaticon-air-freight"></i>
+                        <span class="title">Airport Pickup</span>
+                    </a>
                 </li>
-                <li class="topbar__nav__anchor"><a class="topbar__nav__anchor__a" href="./details.html">Contact</a>
+                <li class="wow fadeInUp" data-wow-delay=".7s"
+                    style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInUp;">
+                    <a href="#">
+                        <i class="flaticon-marker"></i>
+                        <i class="hover-icon flaticon-marker"></i>
+                        <span class="title">city guide</span>
+                    </a>
+                </li>
+                <li class="wow fadeInUp" data-wow-delay=".9s"
+                    style="visibility: visible; animation-delay: 0.9s; animation-name: fadeInUp;">
+                    <a href="#">
+                        <i class="flaticon-barbecue"></i>
+                        <i class="hover-icon flaticon-barbecue"></i>
+                        <span class="title">bbq party</span>
+                    </a>
+                </li>
+                <li class="wow fadeInUp" data-wow-delay="1.1s"
+                    style="visibility: visible; animation-delay: 1.1s; animation-name: fadeInUp;">
+                    <a href="#">
+                        <i class="flaticon-hotel"></i>
+                        <i class="hover-icon flaticon-hotel"></i>
+                        <span class="title">luxury room</span>
+                    </a>
                 </li>
             </ul>
         </div>
-    </nav>
-
-    <div class="header__back"></div>
-
-    <header class="header">
-        <p class="subtitle header__text__description">THE ULTIMATE LUXURY EXPERIENCE</p>
-        <p class="title header__text__title">The Perfect Base For You</p>
-        <button class="button button-golden header__button">TAKE A TOUR</button>
-        <button class="button button-dark header__button">LEARN MORE</button>
-    </header>
-
-    <section class="availability">
-        <div class="availability__date__container">
-            <div class="availability__date">
-                <p class="availability__text">Arrival Date</p>
-                <input class="input input__date--golden availability__input" type="date">
-            </div>
-            <div class="availability__date">
-                <p class="availability__text">LeDeparture Date</p>
-                <input class="input input__date--golden availability__input" type="date">
-            </div>
-        </div>
-        <button class="button button-golden availability__button">CHECK AVAILABILITY</button>
     </section>
+    <!-- About Us Page -->
 
-    <section class="about-data">
-        <div class="about-data__discover">
-            <p class="subtitle about-data__discover__subtitle">ABOUT US</p>
-            <p class="title about-data__discover__title">Discover Our Underground.</p>
-            <p class="text-archivo about-data__discover__description">Lorem ipsum dolor sit amet, consectetur
-                adipisicing elit, sed
-                do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                ut aliquip ex ea commodo consequat.</p>
-            <button class="button button-golden about-data__discover__button">BOOK NOW</button>
-        </div>
-
-        <div class="about-data__card__container">
-            <div class="about-data__card about-data__card__team">
-                <img class="about-data__card__img" src="./src/assets/images/wine.jpg">
-                <div class="about-data__card__description">
-                    <img class="about-data__card__description__img" src="./src/assets/icons/team.svg">
-                    <p class="about-data__card__description__title">Strong Team</p>
-                    <p class="text-roboto about-data__card__description__text">Lorem ipsum dolor sit amet,
-                        consectetur adipisicing elit,
-                        sed do eiusmod tempor.</p>
-                    <img class="about-data__card__description__background" src="./src/assets/icons/team.svg">
-                </div>
-            </div>
-
-            <div class="about-data__card about-data__card__room">
-                <img class="about-data__card__img" src="./src/assets/images/luxury-room.jpg">
-                <div class="about-data__card__description about-data__card__description--dark">
-                    <img class="about-data__card__description__img" src="./src/assets/icons/calendar.svg">
-                    <p class="about-data__card__description__title about-data__card__description__title--white">Luxury
-                        Room
-                    </p>
-                    <p class="text-roboto text-roboto--white about-data__card__description__text">Lorem
-                        ipsum
-                        dolor sit amet,
-                        consectetur adipisicing elit,
-                        sed do eiusmod tempor.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="room-slider">
-        <p class="subtitle">ROOMS</p>
-        <p class="title room-slider__title">Hand Picked Rooms</p>
-
-        <div class="swiper">
-            <div class="swiper-wrapper">
-
-                <div class="swiper-slide">
-                    <div class="room">
-                        <div class="room__container">
-                            <div class="room__rules">
-                                <img class="room__rules__icon" src="./src/assets/icons/bed.svg">
-                                <img class="room__rules__icon" src="./src/assets/icons/wifi.svg">
-                                <img class="room__rules__icon" src="./src/assets/icons/automobile.svg">
-                                <img class="room__rules__icon" src="./src/assets/icons/snow.svg">
-                                <img class="room__rules__icon" src="./src/assets/icons/dumbbell.svg">
-                                <img class="room__rules__icon" src="./src/assets/icons/smoke.svg">
-                                <img class="room__rules__icon" src="./src/assets/icons/cup.svg">
-                            </div>
-                            <div class="room__img" style="background-image: url('./src/assets/images/room1.jpg')">
-                            </div>
-                        </div>
-                        <div class="room__data">
-                            <div class="room__data__text">
-                                <p class="room__data__text__title">Minimal Duplex Room</p>
-                                <p class="text-roboto text-roboto--grey room__data__text__description">Lorem ipsum dolor
-                                    sit amet,
-                                    consectetur
-                                    adipisicing
-                                    elit,
-                                    sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                            </div>
-                            <div class="room__data__properties">
-                                <p class="room__data__properties__price">$375<span
-                                        class="room__data__properties__price__night">/Night</span></p>
-                            </div>
-                        </div>
+    <!-- Gallery section starts  -->
+    <section class="room-type-section pt-115 pb-115" style="background-color: white;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="section-title text-lg-left text-center">
+                        <span class="title-tag">Sunrise Eco Homes Moments</span>
+                        <h2>Our Gallery</h2>
                     </div>
                 </div>
+                <div class="col-lg-6">
+                    <ul class="room-filter nav nav-pills justify-content-center justify-content-lg-end" id="room-tab"
+                        role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link" id="luxury-tab" data-bs-toggle="pill" href="#luxury">
+                                Exterior
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="family-tab" data-bs-toggle="pill" href="#family">
+                                Interior
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="doublebed-tab" data-bs-toggle="pill" href="#doublebed">
+                                Room
+                            </a>
+                        </li>
 
-                <div class="swiper-slide">
-                    <div class="room">
-                        <div class="room__container">
-                            <div class="room__rules">
-                                <img class="room__rules__icon" src="./src/assets/icons/bed.svg">
-                                <img class="room__rules__icon" src="./src/assets/icons/wifi.svg">
-                                <img class="room__rules__icon" src="./src/assets/icons/automobile.svg">
-                                <img class="room__rules__icon" src="./src/assets/icons/snow.svg">
-                                <img class="room__rules__icon" src="./src/assets/icons/dumbbell.svg">
-                                <img class="room__rules__icon" src="./src/assets/icons/smoke.svg">
-                                <img class="room__rules__icon" src="./src/assets/icons/cup.svg">
+                    </ul>
+                </div>
+            </div>
+            <div class="tab-content mt-65" id="room-tabContent">
+                <div class="tab-pane fade active show" id="luxury" role="tabpanel">
+                    <div class="room-items">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="room-box extra-wide">
+                                            <div class="room-bg"
+                                                style="background-image: url(sunrise-img/exterior/16.jpeg);"></div>
+                                            <div class="room-content">
+                                                <h3><a href="#">Exterior View</a></h3>
+                                            </div>
+                                            <a href="gallery.html" class="room-link"><i
+                                                    class="fal fa-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6">
+                                        <div class="room-box">
+                                            <div class="room-bg"
+                                                style="background-image: url(sunrise-img/exterior/1.jpg);">
+                                            </div>
+                                            <div class="room-content">
+                                                <h3><a href="#">Front View</a></h3>
+                                            </div>
+                                            <a href="gallery.html" class="room-link"><i
+                                                    class="fal fa-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6">
+                                        <div class="room-box">
+                                            <div class="room-bg"
+                                                style="background-image: url(sunrise-img/exterior/6.jpeg);">
+                                            </div>
+                                            <div class="room-content">
+                                                <h3><a href="#">Exterior View</a></h3>
+                                            </div>
+                                            <a href="gallery.html" class="room-link"><i
+                                                    class="fal fa-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="room__img" style="background-image: url('./src/assets/images/room2.jpg')">
-                            </div>
-                        </div>
-                        <div class="room__data">
-                            <div class="room__data__text">
-                                <p class="room__data__text__title">Minimal Duplex Room</p>
-                                <p class="text-roboto text-roboto--grey room__data__text__description">Lorem ipsum dolor
-                                    sit amet, consectetur
-                                    adipisicing
-                                    elit,
-                                    sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                            </div>
-                            <div class="room__data__properties">
-                                <p class="room__data__properties__price">$375<span
-                                        class="room__data__properties__price__night">/Night</span></p>
+                            <div class="col-lg-4">
+                                <div class="room-box extra-height">
+                                    <div class="room-bg" style="background-image: url(sunrise-img/exterior/9.jpeg);">
+                                    </div>
+                                    <div class="room-content">
+                                        <h3><a href="#">Entrance View</a></h3>
+                                    </div>
+                                    <a href="gallery.html" class="room-link"><i class="fal fa-arrow-right"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="swiper-slide">
-                    <div class="room">
-                        <div class="room__container">
-                            <div class="room__rules">
-                                <img class="room__rules__icon" src="./src/assets/icons/bed.svg">
-                                <img class="room__rules__icon" src="./src/assets/icons/wifi.svg">
-                                <img class="room__rules__icon" src="./src/assets/icons/automobile.svg">
-                                <img class="room__rules__icon" src="./src/assets/icons/snow.svg">
-                                <img class="room__rules__icon" src="./src/assets/icons/dumbbell.svg">
-                                <img class="room__rules__icon" src="./src/assets/icons/smoke.svg">
-                                <img class="room__rules__icon" src="./src/assets/icons/cup.svg">
+                <div class="tab-pane fade" id="family" role="tabpanel">
+                    <div class="room-items">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="room-box extra-height">
+                                    <div class="room-bg" style="background-image: url(sunrise-img/interior/1.jpeg);">
+                                    </div>
+                                    <div class="room-content">
+
+                                        <h3><a href="#">Sitting Area</a></h3>
+                                    </div>
+                                    <a href="gallery.html" class="room-link"><i class="fal fa-arrow-right"></i></a>
+                                </div>
                             </div>
-                            <div class="room__img" style="background-image: url('./src/assets/images/room3.jpg')">
+                            <div class="col-lg-8">
+                                <div class="row">
+                                    <div class="col-lg-6 col-sm-6">
+                                        <div class="room-box">
+                                            <div class="room-bg"
+                                                style="background-image: url(sunrise-img/interior/7.jpeg);">
+                                            </div>
+                                            <div class="room-content">
+
+                                                <h3><a href="#">Reception Area</a></h3>
+                                            </div>
+                                            <a href="gallery.html" class="room-link"><i
+                                                    class="fal fa-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6">
+                                        <div class="room-box">
+                                            <div class="room-bg"
+                                                style="background-image: url(sunrise-img/interior/11.jpeg);">
+                                            </div>
+                                            <div class="room-content">
+
+                                                <h3><a href="#">Interior View</a></h3>
+                                            </div>
+                                            <a href="gallery.html" class="room-link"><i
+                                                    class="fal fa-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="room-box extra-wide">
+                                            <div class="room-bg"
+                                                style="background-image: url(sunrise-img/interior/4.jpeg);"></div>
+                                            <div class="room-content">
+
+                                                <h3><a href="#">Interior View</a></h3>
+                                            </div>
+                                            <a href="gallery.html" class="room-link"><i
+                                                    class="fal fa-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="room__data">
-                            <div class="room__data__text">
-                                <p class="room__data__text__title">Minimal Duplex Room</p>
-                                <p class="text-roboto text-roboto--grey room__data__text__description">Lorem ipsum dolor
-                                    sit amet, consectetur
-                                    adipisicing
-                                    elit,
-                                    sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                    </div>
+                </div>
+
+
+                <div class="tab-pane fade" id="doublebed" role="tabpanel">
+                    <div class="room-items">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="room-box extra-height">
+                                    <div class="room-bg" style="background-image: url(sunrise-img/rooms/1.jpeg);">
+                                    </div>
+                                    <div class="room-content">
+                                        <h3><a href="#">Room View</a></h3>
+                                    </div>
+                                    <a href="gallery.html" class="room-link"><i class="fal fa-arrow-right"></i></a>
+                                </div>
                             </div>
-                            <div class="room__data__properties">
-                                <p class="room__data__properties__price">$375<span
-                                        class="room__data__properties__price__night">/Night</span></p>
+                            <div class="col-lg-8">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="room-box extra-wide">
+                                            <div class="room-bg"
+                                                style="background-image: url(sunrise-img/rooms/5.jpeg);"></div>
+                                            <div class="room-content">
+                                                <span class="room-count"><i class="fal fa-th"></i>03 Rooms</span>
+                                                <h3><a href="#">Room View</a></h3>
+                                            </div>
+                                            <a href="gallery.html" class="room-link"><i
+                                                    class="fal fa-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6">
+                                        <div class="room-box">
+                                            <div class="room-bg"
+                                                style="background-image: url(sunrise-img/rooms/8.jpeg);">
+                                            </div>
+                                            <div class="room-content">
+                                                <span class="room-count"><i class="fal fa-th"></i>05 Rooms</span>
+                                                <h3><a href="#">Room View</a></h3>
+                                            </div>
+                                            <a href="gallery.html" class="room-link"><i
+                                                    class="fal fa-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6">
+                                        <div class="room-box">
+                                            <div class="room-bg"
+                                                style="background-image: url(sunrise-img/rooms/7.jpeg);">
+                                            </div>
+                                            <div class="room-content">
+                                                <span class="room-count"><i class="fal fa-th"></i>10 Rooms</span>
+                                                <h3><a href="#">Room View</a></h3>
+                                            </div>
+                                            <a href="gallery.html" class="room-link"><i
+                                                    class="fal fa-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="swiper__prev-element">></div>
-            <div class="swiper__next-element">></div>
-
-        </div>
-    </section>
-
-    <section class="home-video">
-        <div class="home-video__container">
-            <div class="home-video__text">
-                <p class="subtitle home-video__text__subtitle">INTRO VIDEO</p>
-                <p class="title home-video__text__title">Meet With Our Luxury Place.</p>
-                <p class="text-archivo home-video__text__description">Lorem ipsum dolor sit amet,
-                    consectetur adipisicing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat you have to understand this.
-                </p>
-                <button class="button button-golden home-video__button--desktop">BOOK NOW</button>
-            </div>
-            <div class="home-video__source">
-                <video class="home-video__video" controls>
-                    <source src="./src/assets/videos/luxury-hotel.mp4" type="video/mp4">
-                </video>
-            </div>
-            <button class="button button-golden home-video__button--mobile">BOOK NOW</button>
-        </div>
-        <div class="home-video__decoration"></div>
-    </section>
-
-    <section class="core-features">
-
-        <p class="subtitle core-features__subtitle">FACILITIES</p>
-        <p class="title core-features__title">Core Features</p>
-
-        <div class="swiper-feature">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="feature">
-                        <img class="feature__img-foreground" src="./src/assets/images/rating.png">
-                        <div class="feature__img-background">01</div>
-                        <p class="feature__title">Have High Rating</p>
-                        <p class="text-archivo">Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit, sed do
-                            eiusmod
-                            tempor incididunt ut labore et dolore magna..</p>
-                    </div>
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="feature">
-                        <img class="feature__img-foreground" src="./src/assets/images/clock.png">
-                        <div class="feature__img-background">02</div>
-                        <p class="feature__title">Quiet Hours</p>
-                        <p class="text-archivo">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                            eiusmod
-                            tempor incididunt ut labore et dolore magna..</p>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="feature">
-                        <img class="feature__img-foreground" src="./src/assets/icons/location.svg">
-                        <div class="feature__img-background">03</div>
-                        <p class="feature__title">Best Locations</p>
-                        <p class="text-archivo">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                            eiusmod
-                            tempor incididunt ut labore et dolore magna..</p>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="feature">
-                        <img class="feature__img-foreground" src="./src/assets/images/clock-cancel.png">
-                        <div class="feature__img-background">04</div>
-                        <p class="feature__title">Free Cancellation</p>
-                        <p class="text-archivo">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                            eiusmod
-                            tempor incididunt ut labore et dolore magna..</p>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="feature">
-                        <img class="feature__img-foreground" src="./src/assets/icons/payment.svg">
-                        <div class="feature__img-background">05</div>
-                        <p class="feature__title">Payment Options</p>
-                        <p class="text-archivo">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                            eiusmod
-                            tempor incididunt ut labore et dolore magna..</p>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="feature">
-                        <img class="feature__img-foreground" src="./src/assets/icons/offer.svg">
-                        <div class="feature__img-background">06</div>
-                        <p class="feature__title">Special Offers</p>
-                        <p class="text-archivo">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                            eiusmod
-                            tempor incididunt ut labore et dolore magna..</p>
-                    </div>
-                </div>
-            </div>
-            <div class="swipper-feature__pagination"></div>
-        </div>
-
-        <div class="core-features__grid">
-            <div class="feature">
-                <img class="feature__img-foreground" src="./src/assets/images/rating.png">
-                <div class="feature__img-background">01</div>
-                <p class="feature__title">Have High Rating</p>
-                <p class="text-archivo">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                    eiusmod
-                    tempor incididunt ut labore et dolore magna..</p>
-            </div>
-            <div class="feature">
-                <img class="feature__img-foreground" src="./src/assets/images/clock.png">
-                <div class="feature__img-background">02</div>
-                <p class="feature__title">Quiet Hours</p>
-                <p class="text-archivo">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                    eiusmod
-                    tempor incididunt ut labore et dolore magna..</p>
-            </div>
-            <div class="feature">
-                <img class="feature__img-foreground" src="./src/assets/icons/location.svg">
-                <div class="feature__img-background">03</div>
-                <p class="feature__title">Best Locations</p>
-                <p class="text-archivo">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                    eiusmod
-                    tempor incididunt ut labore et dolore magna..</p>
-            </div>
-            <div class="feature">
-                <img class="feature__img-foreground" src="./src/assets/images/clock-cancel.png">
-                <div class="feature__img-background">04</div>
-                <p class="feature__title">Free Cancellation</p>
-                <p class="text-archivo">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                    eiusmod
-                    tempor incididunt ut labore et dolore magna..</p>
-            </div>
-            <div class="feature">
-                <img class="feature__img-foreground" src="./src/assets/icons/payment.svg">
-                <div class="feature__img-background">05</div>
-                <p class="feature__title">Payment Options</p>
-                <p class="text-archivo">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                    eiusmod
-                    tempor incididunt ut labore et dolore magna..</p>
-            </div>
-            <div class="feature">
-                <img class="feature__img-foreground" src="./src/assets/icons/offer.svg">
-                <div class="feature__img-background">06</div>
-                <p class="feature__title">Special Offers</p>
-                <p class="text-archivo">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                    eiusmod
-                    tempor incididunt ut labore et dolore magna..</p>
             </div>
         </div>
     </section>
+    <!-- Gallery section starts  -->
 
-    <section class="foods-menu">
 
-        <img class="foods-menu__img" src="./src/assets/images/donut.png">
-        <p class="subtitle foods-menu__subtitle">MENU</p>
-        <p class="title foods-menu__title">Our Foods Menu</p>
 
-        <div class="swiper-food">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="swiper-food__column">
-                        <div class="food">
-                            <div class="food__img" style="background-image: url('./src/assets/images/eggs-bacon.jpg')">
-                            </div>
-                            <div class="food__text">
-                                <p class="food__text__title">Eggs & Bacon</p>
-                                <p class="text-roboto food__text__description">Lorem ipsum dolor sit amet, consectetur
-                                    adip isicing
-                                    elit, sed do
-                                    eiusmod tempor.</p>
-                            </div>
-                            <img class="food__arrow" src="./src/assets/icons/arrow.svg">
+    <!-- Accommodation section -->
+    <section class="text-block with-bg pt-115 pb-115" style="background-image: url(sunrise-img/rooms/5.jpeg);" id="rooms">
+        <div class="container">
+            <div class="row align-items-center justify-content-center justify-content-lg-between">
+                <div class="col-lg-5 col-md-8 col-sm-10 wow fadeInLeft" data-wow-delay=".3s"
+                    style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                    <div class="block-text mb-small">
+                        <div class="section-title mb-20">
+                            <span class="title-tag">Premium Comfort</span>
+                            <h2>Experience Our Deluxe Rooms</h2>
                         </div>
-                        <div class="food">
-                            <div class="food__img" style="background-image: url('./src/assets/images/coffe.jpg')">
-                            </div>
-                            <div class="food__text">
-                                <p class="food__text__title">Tea or Coffee</p>
-                                <p class="text-roboto food__text__description">Lorem ipsum dolor sit amet, consectetur
-                                    adip isicing
-                                    elit, sed do
-                                    eiusmod tempor.</p>
-                            </div>
-                            <img class="food__arrow" src="./src/assets/icons/arrow.svg">
-                        </div>
-                        <div class="food">
-                            <div class="food__img" style="background-image: url('./src/assets/images/chia.jpg')">
-                            </div>
-                            <div class="food__text">
-                                <p class="food__text__title">Chia Oatmeal</p>
-                                <p class="text-roboto food__text__description">Lorem ipsum dolor sit amet, consectetur
-                                    adip isicing
-                                    elit, sed do
-                                    eiusmod tempor.</p>
-                            </div>
-                            <img class="food__arrow" src="./src/assets/icons/arrow.svg">
-                        </div>
+                        <p>
+                            Nestled amidst the serene beauty of Daringbadi, our Deluxe Rooms offer the perfect blend of
+                            comfort and nature. Thoughtfully designed with cozy interiors, modern amenities, and scenic
+                            views, each room is your private retreat to relax, recharge, and reconnect with nature.
+                        </p>
+                        <a href="#" class="main-btn btn-filled mt-40">Book now</a>
+                        <a href="deluxe-rooms.html" class="main-btn btn-filled mt-40">View More</a>
                     </div>
                 </div>
-
-                <div class="swiper-slide">
-                    <div class="swiper-food__column">
-
-                        <div class="food">
-                            <div class="food__img" style="background-image: url('./src/assets/images/fruit.jpg')">
-                            </div>
-                            <div class="food__text">
-                                <p class="food__text__title">Fruit Parfait</p>
-                                <p class="text-roboto food__text__description">Lorem ipsum dolor sit amet, consectetur
-                                    adip isicing
-                                    elit, sed do
-                                    eiusmod tempor.</p>
-                            </div>
-                            <img class="food__arrow" src="./src/assets/icons/arrow.svg">
-                        </div>
-
-                        <div class="food">
-                            <div class="food__img" style="background-image: url('./src/assets/images/marmalade.jpg')">
-                            </div>
-                            <div class="food__text">
-                                <p class="food__text__title">Marmalade Selection</p>
-                                <p class="text-roboto food__text__description">Lorem ipsum dolor sit amet, consectetur
-                                    adip isicing
-                                    elit, sed do
-                                    eiusmod tempor.</p>
-                            </div>
-                            <img class="food__arrow" src="./src/assets/icons/arrow.svg">
-                        </div>
-
-                        <div class="food">
-                            <div class="food__img" style="background-image: url('./src/assets/images/cheese.jpg')">
-                            </div>
-                            <div class="food__text">
-                                <p class="food__text__title">Cheese Plate</p>
-                                <p class="text-roboto food__text__description">Lorem ipsum dolor sit amet, consectetur
-                                    adip isicing
-                                    elit, sed do
-                                    eiusmod tempor.</p>
-                            </div>
-                            <img class="food__arrow" src="./src/assets/icons/arrow.svg">
-                        </div>
+                <div class="col-lg-6 col-md-10 wow fadeInRight" data-wow-delay=".5s"
+                    style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInRight;">
+                    <div class="video-wrap" style="background-image: url(sunrise-img/rooms/5.jpeg);">
+                        <a href="https://www.youtube.com/watch?v=EEJFMdfraVY" class="popup-video"><img
+                                src="sunrise-img/eye.png" alt="" style="height: 30px; width: 30px;"></a>
                     </div>
                 </div>
-                <div class="swiper-slide">
-                    <div class="swiper-food__column">
-                        <div class="food">
-                            <div class="food__img" style="background-image: url('./src/assets/images/spaguetti.jpg')">
-                            </div>
-                            <div class="food__text">
-                                <p class="food__text__title">Spaguetti</p>
-                                <p class="text-roboto food__text__description">Lorem ipsum dolor sit amet, consectetur
-                                    adip isicing
-                                    elit, sed do
-                                    eiusmod tempor.</p>
-                            </div>
-                            <img class="food__arrow" src="./src/assets/icons/arrow.svg">
-                        </div>
-
-                        <div class="food">
-                            <div class="food__img" style="background-image: url('./src/assets/images/paella.jpg')">
-                            </div>
-                            <div class="food__text">
-                                <p class="food__text__title">Paella</p>
-                                <p class="text-roboto food__text__description">Lorem ipsum dolor sit amet, consectetur
-                                    adip isicing
-                                    elit, sed do
-                                    eiusmod tempor.</p>
-                            </div>
-                            <img class="food__arrow" src="./src/assets/icons/arrow.svg">
-                        </div>
-
-                        <div class="food">
-                            <div class="food__img" style="background-image: url('./src/assets/images/gazpacho.jpg')">
-                            </div>
-                            <div class="food__text">
-                                <p class="food__text__title">Gazpacho</p>
-                                <p class="text-roboto food__text__description">Lorem ipsum dolor sit amet, consectetur
-                                    adip isicing
-                                    elit, sed do
-                                    eiusmod tempor.</p>
-                            </div>
-                            <img class="food__arrow" src="./src/assets/icons/arrow.svg">
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="swiper-food__column">
-                        <div class="food">
-                            <div class="food__img" style="background-image: url('./src/assets/images/sandwich.jpg')">
-                            </div>
-                            <div class="food__text">
-                                <p class="food__text__title">Sandwich</p>
-                                <p class="text-roboto food__text__description">Lorem ipsum dolor sit amet, consectetur
-                                    adip isicing
-                                    elit, sed do
-                                    eiusmod tempor.</p>
-                            </div>
-                            <img class="food__arrow" src="./src/assets/icons/arrow.svg">
-                        </div>
-
-                        <div class="food">
-                            <div class="food__img" style="background-image: url('./src/assets/images/morteruelo.jpg')">
-                            </div>
-                            <div class="food__text">
-                                <p class="food__text__title">Morteruelo</p>
-                                <p class="text-roboto food__text__description">Lorem ipsum dolor sit amet, consectetur
-                                    adip isicing
-                                    elit, sed do
-                                    eiusmod tempor.</p>
-                            </div>
-                            <img class="food__arrow" src="./src/assets/icons/arrow.svg">
-                        </div>
-
-                        <div class="food">
-                            <div class="food__img" style="background-image: url('./src/assets/images/arepa.jpg')">
-                            </div>
-                            <div class="food__text">
-                                <p class="food__text__title">Arepas</p>
-                                <p class="text-roboto food__text__description">Lorem ipsum dolor sit amet, consectetur
-                                    adip isicing
-                                    elit, sed do
-                                    eiusmod tempor.</p>
-                            </div>
-                            <img class="food__arrow" src="./src/assets/icons/arrow.svg">
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="swiper-food__buttons">
-                <div class="swiper-food__prev-element">></div>
-                <div class="swiper-food__next-element">></div>
-            </div>
-
-        </div>
-
-        <div class="swiper-food__grid">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="foods-menu__grid">
-                        <div class="food">
-                            <div class="food__img" style="background-image: url('./src/assets/images/eggs-bacon.jpg')">
-                            </div>
-                            <div class="food__text">
-                                <p class="food__text__title">Eggs & Bacon</p>
-                                <p class="text-roboto food__text__description">Lorem ipsum dolor sit amet, consectetur
-                                    adip isicing
-                                    elit, sed do
-                                    eiusmod tempor.</p>
-                            </div>
-                            <img class="food__arrow" src="./src/assets/icons/arrow.svg">
-                        </div>
-
-                        <div class="food">
-                            <div class="food__img" style="background-image: url('./src/assets/images/coffe.jpg')">
-                            </div>
-                            <div class="food__text">
-                                <p class="food__text__title">Tea or Coffee</p>
-                                <p class="text-roboto food__text__description">Lorem ipsum dolor sit amet, consectetur
-                                    adip isicing
-                                    elit, sed do
-                                    eiusmod tempor.</p>
-                            </div>
-                            <img class="food__arrow" src="./src/assets/icons/arrow.svg">
-                        </div>
-
-                        <div class="food">
-                            <div class="food__img" style="background-image: url('./src/assets/images/chia.jpg')">
-                            </div>
-                            <div class="food__text">
-                                <p class="food__text__title">Chia Oatmeal</p>
-                                <p class="text-roboto food__text__description">Lorem ipsum dolor sit amet, consectetur
-                                    adip isicing
-                                    elit, sed do
-                                    eiusmod tempor.</p>
-                            </div>
-                            <img class="food__arrow" src="./src/assets/icons/arrow.svg">
-                        </div>
-
-                        <div class="food">
-                            <div class="food__img" style="background-image: url('./src/assets/images/fruit.jpg')">
-                            </div>
-                            <div class="food__text">
-                                <p class="food__text__title">Fruit Parfait</p>
-                                <p class="text-roboto food__text__description">Lorem ipsum dolor sit amet, consectetur
-                                    adip isicing
-                                    elit, sed do
-                                    eiusmod tempor.</p>
-                            </div>
-                            <img class="food__arrow" src="./src/assets/icons/arrow.svg">
-                        </div>
-
-                        <div class="food">
-                            <div class="food__img" style="background-image: url('./src/assets/images/marmalade.jpg')">
-                            </div>
-                            <div class="food__text">
-                                <p class="food__text__title">Marmalade Selection</p>
-                                <p class="text-roboto food__text__description">Lorem ipsum dolor sit amet, consectetur
-                                    adip isicing
-                                    elit, sed do
-                                    eiusmod tempor.</p>
-                            </div>
-                            <img class="food__arrow" src="./src/assets/icons/arrow.svg">
-                        </div>
-
-                        <div class="food">
-                            <div class="food__img" style="background-image: url('./src/assets/images/cheese.jpg')">
-                            </div>
-                            <div class="food__text">
-                                <p class="food__text__title">Cheese Plate</p>
-                                <p class="text-roboto food__text__description">Lorem ipsum dolor sit amet, consectetur
-                                    adip isicing
-                                    elit, sed do
-                                    eiusmod tempor.</p>
-                            </div>
-                            <img class="food__arrow" src="./src/assets/icons/arrow.svg">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="foods-menu__grid">
-                        <div class="food">
-                            <div class="food__img" style="background-image: url('./src/assets/images/spaguetti.jpg')">
-                            </div>
-                            <div class="food__text">
-                                <p class="food__text__title">Spaguetti</p>
-                                <p class="text-roboto food__text__description">Lorem ipsum dolor sit amet, consectetur
-                                    adip isicing
-                                    elit, sed do
-                                    eiusmod tempor.</p>
-                            </div>
-                            <img class="food__arrow" src="./src/assets/icons/arrow.svg">
-                        </div>
-
-                        <div class="food">
-                            <div class="food__img" style="background-image: url('./src/assets/images/paella.jpg')">
-                            </div>
-                            <div class="food__text">
-                                <p class="food__text__title">Paella</p>
-                                <p class="text-roboto food__text__description">Lorem ipsum dolor sit amet, consectetur
-                                    adip isicing
-                                    elit, sed do
-                                    eiusmod tempor.</p>
-                            </div>
-                            <img class="food__arrow" src="./src/assets/icons/arrow.svg">
-                        </div>
-
-                        <div class="food">
-                            <div class="food__img" style="background-image: url('./src/assets/images/gazpacho.jpg')">
-                            </div>
-                            <div class="food__text">
-                                <p class="food__text__title">Gazpacho</p>
-                                <p class="text-roboto food__text__description">Lorem ipsum dolor sit amet, consectetur
-                                    adip isicing
-                                    elit, sed do
-                                    eiusmod tempor.</p>
-                            </div>
-                            <img class="food__arrow" src="./src/assets/icons/arrow.svg">
-                        </div>
-
-                        <div class="food">
-                            <div class="food__img" style="background-image: url('./src/assets/images/sandwich.jpg')">
-                            </div>
-                            <div class="food__text">
-                                <p class="food__text__title">Sandwich</p>
-                                <p class="text-roboto food__text__description">Lorem ipsum dolor sit amet, consectetur
-                                    adip isicing
-                                    elit, sed do
-                                    eiusmod tempor.</p>
-                            </div>
-                            <img class="food__arrow" src="./src/assets/icons/arrow.svg">
-                        </div>
-
-                        <div class="food">
-                            <div class="food__img" style="background-image: url('./src/assets/images/morteruelo.jpg')">
-                            </div>
-                            <div class="food__text">
-                                <p class="food__text__title">Morteruelo</p>
-                                <p class="text-roboto food__text__description">Lorem ipsum dolor sit amet, consectetur
-                                    adip isicing
-                                    elit, sed do
-                                    eiusmod tempor.</p>
-                            </div>
-                            <img class="food__arrow" src="./src/assets/icons/arrow.svg">
-                        </div>
-
-                        <div class="food">
-                            <div class="food__img" style="background-image: url('./src/assets/images/arepa.jpg')">
-                            </div>
-                            <div class="food__text">
-                                <p class="food__text__title">Arepas</p>
-                                <p class="text-roboto food__text__description">Lorem ipsum dolor sit amet, consectetur
-                                    adip isicing
-                                    elit, sed do
-                                    eiusmod tempor.</p>
-                            </div>
-                            <img class="food__arrow" src="./src/assets/icons/arrow.svg">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-food__grid__buttons">
-                <div class="swiper-food__grid__prev-element">></div>
-                <div class="swiper-food__grid__next-element">></div>
             </div>
         </div>
-
-        <div class="swiper-food__images">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="food-slide__img" style="background-image: url('./src/assets/images/paella.jpg')"></div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="food-slide__img" style="background-image: url('./src/assets/images/morteruelo.jpg')">
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="food-slide__img" style="background-image: url('./src/assets/images/gazpacho.jpg')">
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-food__pagination"></div>
-        </div>
-
-        <div class="food-list__img">
-            <div class="food-list__img__img" style="background-image: url('./src/assets/images/paella.jpg')"></div>
-            <div class="food-list__img__img" style="background-image: url('./src/assets/images/morteruelo.jpg')">
-            </div>
-            <div class="food-list__img__img" style="background-image: url('./src/assets/images/gazpacho.jpg')">
-            </div>
-        </div>
-
     </section>
+    <!-- Accommodation section -->
 
-    <section class="statistics">
-        <div class="statistics__stat">
-            <img class="statistics__stat__img" src="./src/assets/images/rocket.png">
-            <p class="statistics__text statistics__stat__number">84k</p>
-            <p class="statistics__text statistics__stat__text">Projects are Completed</p>
+
+    <!--====== CORE FEATURES START ======-->
+    <section class="core-feature-section bg-white pt-115 pb-115">
+        <div class="container">
+            <div class="section-title text-center mb-50">
+                <span class="title-tag">Our Offerings</span>
+                <h2> Amenities & Facilities</h2>
+            </div>
+            <!-- Featre Loop -->
+            <div class="row features-loop">
+                <div class="col-lg-4 col-sm-6 order-1">
+                    <div class="feature-box with-hover-img wow fadeInLeft" data-wow-delay=".3s">
+                        <div class="icon">
+                            <img src="sunrise-img/icons/tent.png" alt="" style="height: 90px; width: 90px;">
+                        </div>
+                        <h3><a href="#">Camping Tent </a></h3>
+                        <p>
+                            Enjoy a cozy stay under the stars with our comfortable camping tents.
+                        </p>
+                        <span class="count">01</span>
+                        <div class="hover-img" style="background-image: url(assets/img/feature/01.jpg);"></div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 order-2">
+                    <div class="feature-box wow fadeInUp" data-wow-delay=".4s">
+                        <div class="icon">
+                            <img src="sunrise-img/icons/room-services.png" alt="" style="height: 90px; width: 90px;">
+                        </div>
+                        <h3><a href="#">Room Service</a></h3>
+                        <p>
+                            Delicious food and refreshments delivered right to your room.
+
+                        </p>
+                        <span class="count">02</span>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 order-3 order-sm-4 order-lg-3">
+                    <div class="feature-box with-hover-img wow fadeInRight" data-wow-delay=".5s">
+                        <div class="icon">
+                            <img src="sunrise-img/icons/serving-dish.png" alt="" style="height: 90px; width: 90px;">
+                        </div>
+                        <h3><a href="#">Restaurant Service</a></h3>
+                        <p>
+                            Savor freshly prepared local and multi-cuisine dishes at our in-house restaurant.
+                        </p>
+                        <span class="count">03</span>
+                        <div class="hover-img" style="background-image: url(assets/img/feature/02.jpg);"></div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 order-4 order-sm-3 order-lg-4">
+                    <div class="feature-box wow fadeInLeft" data-wow-delay=".7s">
+                        <div class="icon">
+                            <img src="sunrise-img/icons/chair.png" alt="" style="height: 90px; width: 90px;">
+                        </div>
+                        <h3><a href="#">Banquet Hall</a></h3>
+                        <p>
+                            Perfect venue for marriage parties, celebrations, and special events.
+                        </p>
+                        <span class="count">04</span>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 order-5">
+                    <div class="feature-box with-hover-img wow fadeInUp" data-wow-delay=".9s">
+                        <div class="icon">
+                            <img src="sunrise-img/icons/parking.png" alt="" style="height: 90px; width: 90px;">
+                        </div>
+                        <h3><a href="#">Parking Facility</a></h3>
+                        <p>
+                            Safe and ample parking space available for all guests.
+                        </p>
+                        <span class="count">05</span>
+                        <div class="hover-img" style="background-image: url(assets/img/feature/03.jpg);"></div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 order-6">
+                    <div class="feature-box wow fadeInDown" data-wow-delay="1.1s">
+                        <div class="icon">
+                            <img src="sunrise-img/icons/luggage-storage.png" alt="" style="height: 90px; width: 90px;">
+                        </div>
+                        <h3><a href="#">Luggage Storage</a></h3>
+                        <p>
+                            Convenient storage facility for your baggage before check-in or after check-out.
+                        </p>
+                        <span class="count">06</span>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="statistics__stat">
-            <img class="statistics__stat__img" src="./src/assets/images/users.png">
-            <p class="statistics__text statistics__stat__number">10M</p>
-            <p class="statistics__text statistics__stat__text">Active Backers Around World</p>
+    </section>
+    <!--====== CORE FEATURES END ======-->
+
+
+    <!--====== COUNTER UP START ======-->
+    <section class="room-gallery-cta" style="background-image: url(sunrise-img/exterior/17.jpeg);">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="cta-text text-center">
+                        <span>our rooms</span>
+                        <h2>
+                            An eco-friendly escape where every sunrise feels like home.
+                        </h2>
+                        <ul class="mt-50">
+                            <li class="wow fadeInUp" data-wow-delay=".3s"
+                                style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;"><a
+                                    class="main-btn btn-filled" href="gallery.html">take a
+                                    tour</a></li>
+                            <li class="wow fadeInUp" data-wow-delay=".5s"
+                                style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;"><a
+                                    class="main-btn btn-border" href="about-us.html">Learn
+                                    More</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="statistics__stat">
-            <img class="statistics__stat__img" src="./src/assets/images/stats.png">
-            <p class="statistics__text statistics__stat__number">02k</p>
-            <p class="statistics__text statistics__stat__text">Categories Served</p>
+        <div class="rotate-images">
+            <!-- <img src="sunrise-img/rooms/2.jpeg" class="rotate-image-one" alt="Image">
+            <img src="sunrise-img/rooms/2.jpeg" class="rotate-image-two" alt="Image">
+            <img src="sunrise-img/rooms/2.jpeg" class="rotate-image-three" alt="Image"> -->
         </div>
-        <div class="statistics__stat">
-            <img class="statistics__stat__img" src="./src/assets/images/book.png">
-            <p class="statistics__text statistics__stat__number">100M</p>
-            <p class="statistics__text statistics__stat__text">Idea Raised Funds</p>
+    </section>
+    <!--====== COUNTER UP END ======-->
+
+
+    <!--====== TESTIMONIAL SLIDER START ======-->
+    <section class="testimonial-section pb-115 pt-115">
+        <div class="container">
+            <div class="section-title text-center mb-80">
+                <span class="title-tag" style="color: #bead8e;">Testimonials</span>
+                <h2>What Our Guests Say</h2>
+            </div>
+
+            <!-- testimonials loop  -->
+            <div class="row testimonial-slider">
+
+                <div class="col-lg-4">
+                    <div class="testimonial-box">
+                        <div class="client-img">
+                            <img src="sunrise-img/asima.png" alt="Guest Image" style="width: 70px; height: 70px;">
+                        </div>
+                        <h3>Asima Pradhan</h3>
+                        <!-- Star Rating -->
+                        <div class="star-rating" style="color: #FFD700; margin: 8px 0;">
+                            ★ ★ ★ ★ ★
+                        </div>
+                        <p>
+                            This place is very beautiful and all rooms are equal. Bathroom is most comfortable
+                            We are happy to all staff.
+                        </p>
+                        <!-- Google Link with Logo -->
+                        <div class="review-source" style="margin-top: 10px;">
+                            <a href="https://www.google.com/maps/contrib/104432191689891409959/reviews/@19.9076937,84.1366579,780m/data=!3m2!1e3!4b1!4m3!8m2!3m1!1e1?hl=en-GB&entry=ttu&g_ep=EgoyMDI1MDYzMC4wIKXMDSoASAFQAw%3D%3D"
+                                target="_blank"
+                                style="text-decoration: none; color: #333; display: inline-flex; align-items: center;">
+                                <img src="sunrise-img/google.png" alt="Google Logo"
+                                    style="width: 20px; height: 20px; margin-right: 5px;">
+                                <span style="font-size: 14px;">View on Google</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="testimonial-box">
+                        <div class="client-img">
+                            <img src="sunrise-img/priyanka.png" alt="Guest Image" style="width: 70px; height: 70px;">
+                        </div>
+                        <h3>Priyanka Sahu</h3>
+                        <!-- Star Rating -->
+                        <div class="star-rating" style="color: #FFD700; margin: 8px 0;">
+                            ★ ★ ★ ★ ★
+                        </div>
+                        <p>
+                            Sunrise Eco Homes is beautiful.
+                            Natural view is lovely.
+                            Morning sunrise here is magical.
+
+                        </p>
+                        <!-- Google Link with Logo -->
+                        <div class="review-source" style="margin-top: 10px;">
+                            <a href="https://www.google.com/maps/contrib/105931946704182835693/reviews/@19.9076937,84.1366579,780m/data=!3m2!1e3!4b1!4m3!8m2!3m1!1e1?hl=en-GB&entry=ttu&g_ep=EgoyMDI1MDYzMC4wIKXMDSoASAFQAw%3D%3D"
+                                target="_blank"
+                                style="text-decoration: none; color: #333; display: inline-flex; align-items: center;">
+                                <img src="sunrise-img/google.png" alt="Google Logo"
+                                    style="width: 20px; height: 20px; margin-right: 5px;">
+                                <span style="font-size: 14px;">View on Google</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="testimonial-box">
+                        <div class="client-img">
+                            <img src="sunrise-img/pallavi.png" alt="Guest Image" style="width: 70px; height: 70px;">
+                        </div>
+                        <h3>Pallavi mahanty</h3>
+                        <!-- Star Rating -->
+                        <div class="star-rating" style="color: #FFD700; margin: 8px 0;">
+                            ★ ★ ★ ★ ★
+                        </div>
+                        <p>
+                            This place is very beautiful and all rooms are equal. Bathroom is most comfortable
+                            We are happy to all staff.
+                        </p>
+                        <!-- Google Link with Logo -->
+                        <div class="review-source" style="margin-top: 10px;">
+                            <a href="https://www.google.com/maps/contrib/109546197862785580337/reviews/@19.7955407,84.9834596,199715m/data=!3m2!1e3!4b1!4m3!8m2!3m1!1e1?hl=en-GB&entry=ttu&g_ep=EgoyMDI1MDYzMC4wIKXMDSoASAFQAw%3D%3D"
+                                target="_blank"
+                                style="text-decoration: none; color: #333; display: inline-flex; align-items: center;">
+                                <img src="sunrise-img/google.png" alt="Google Logo"
+                                    style="width: 20px; height: 20px; margin-right: 5px;">
+                                <span style="font-size: 14px;">View on Google</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="testimonial-box">
+                        <div class="client-img">
+                            <img src="sunrise-img/utam.png" alt="Guest Image" style="width: 70px; height: 70px;">
+                        </div>
+                        <h3>Utam Pradhan</h3>
+                        <!-- Star Rating -->
+                        <div class="star-rating" style="color: #FFD700; margin: 8px 0;">
+                            ★ ★ ★ ★ ★
+                        </div>
+                        <p>
+                            Most beautiful resort in daringbadi
+                            Very nice service
+                        </p>
+                        <p></p>
+
+                        <!-- Google Link with Logo -->
+                        <div class="review-source" style="margin-top: 10px;">
+                            <a href="https://www.google.com/maps/contrib/109340176170765887741/reviews?hl=en-GB"
+                                target="_blank"
+                                style="text-decoration: none; color: #333; display: inline-flex; align-items: center;">
+                                <img src="sunrise-img/google.png" alt="Google Logo"
+                                    style="width: 20px; height: 20px; margin-right: 5px;">
+                                <span style="font-size: 14px;">View on Google</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="testimonial-box">
+                        <div class="client-img">
+                            <img src="sunrise-img/srikant.png" alt="Guest Image" style="width: 70px; height: 70px;">
+                        </div>
+                        <h3>Srikant Patra</h3>
+                        <!-- Star Rating -->
+                        <div class="star-rating" style="color: #FFD700; margin: 8px 0;">
+                            ★ ★ ★ ★ ★
+                        </div>
+                        <p>
+                            Most beautiful this place in. Sun rise eco homes at daringabadi
+                        </p>
+                        <!-- Google Link with Logo -->
+                        <div class="review-source" style="margin-top: 10px;">
+                            <a href="https://www.google.com/maps/contrib/117973063890608424226/reviews/@19.9076937,84.1366579,780m/data=!3m2!1e3!4b1!4m3!8m2!3m1!1e1?hl=en-GB&entry=ttu&g_ep=EgoyMDI1MDYzMC4wIKXMDSoASAFQAw%3D%3D"
+                                target="_blank"
+                                style="text-decoration: none; color: #333; display: inline-flex; align-items: center;">
+                                <img src="sunrise-img/google.png" alt="Google Logo"
+                                    style="width: 20px; height: 20px; margin-right: 5px;">
+                                <span style="font-size: 14px;">View on Google</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </section>
 
-    <footer class="footer">
-        <div class="footer__content">
-            <div class="footer__description">
-                <div class="logo logo--golden">
-                    <div class="logo__back logo--golden__back">
-                        <p class="logo__letter logo--golden__letter">H</p>
-                    </div>
-                    <img class="logo--golden__wordmark" src="./src/assets/icons/wordmark.svg">
-                </div>
-                <p class="footer__description__text">Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed
-                    doing
-                    eius mod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat ion ullamco laboris nisi.
-                </p>
-                <div class="footer__description__social-media">
-                    <a href="#" class="social-media-link"><img class="social-media-link__icon"
-                            src="./src/assets/icons/facebook.svg"></a>
-                    <a href="#" class="social-media-link"><img class="social-media-link__icon"
-                            src="./src/assets/icons/twitter.svg"></a>
-                    <a href="#" class="social-media-link"><img class="social-media-link__icon"
-                            src="./src/assets/icons/behance.svg"></a>
-                    <a href="#" class="social-media-link"><img class="social-media-link__icon"
-                            src="./src/assets/icons/linkedin.svg"></a>
-                    <a href="#" class="social-media-link"><img class="social-media-link__icon"
-                            src="./src/assets/icons/youtube.svg"></a>
-                </div>
-            </div>
+    <!--====== TESTIMONIAL SLIDER END ======-->
 
-            <div class="footer__services">
-                <p class="footer__services__title">Services.</p>
+    <!--====== Back to Top ======-->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fal fa-angle-double-up"></i>
+    </a>
+    <!--====== FOOTER START ======-->
+    <script src="footer.js"></script>
+    <!--====== FOOTER END ======-->
 
-                <div class="footer__services__container">
-                    <div class="footer__services__column">
-                        <p class="footer__services__text">+ Resturent & Bar</p>
-                        <p class="footer__services__text">+ Swimming Pool</p>
-                        <p class="footer__services__text">+ Wellness & Spa</p>
-                        <p class="footer__services__text">+ Restaurant</p>
-                        <p class="footer__services__text">+ Conference Room</p>
-                        <p class="footer__services__text">+ Coctail Party House</p>
-                    </div>
-                    <div class="footer__services__column">
-                        <p class="footer__services__text">+ Gaming Zone</p>
-                        <p class="footer__services__text">+ Marrige Party</p>
-                        <p class="footer__services__text">+ Party Planning</p>
-                        <p class="footer__services__text">+ Tour Consultancy</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="footer__contact">
-                <p class="footer__contact__title">Contact us.</p>
-
-                <div class="footer__contact__container">
-                    <img class="footer__contact__img" src="./src/assets/icons/phone.svg">
-                    <div class="footer__contact__data">
-                        <p class="footer__contact__data__title">Phone number</p>
-                        <p class="footer__contact__data__text">+987 876 765 76 577</p>
-                    </div>
-                </div>
-
-                <div class="footer__contact__container">
-                    <img class="footer__contact__img" src="./src/assets/images/hotel-address.png">
-                    <div class="footer__contact__data">
-                        <p class="footer__contact__data__title">Phone number</p>
-                        <p class="footer__contact__data__text">+987 876 765 76 577</p>
-                    </div>
-                </div>
-
-                <div class="footer__contact__container">
-                    <img class="footer__contact__img" src="./src/assets/images/email.png">
-                    <div class="footer__contact__data">
-                        <p class="footer__contact__data__title">Phone number</p>
-                        <p class="footer__contact__data__text">+987 876 765 76 577</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="footer__copyright">
-            <p class="footer__copyright__copy footer__copyright__text">Copyright By@Example - 2020</p>
-            <div class="footer__copyright__links">
-                <a class="footer__copyright__text footer__copyright__link" href="#">Terms of use</a>
-                <p class="footer__copyright__text">|</p>
-                <a class="footer__copyright__text footer__copyright__link" href="#">Privacy Environmental Policy</a>
-            </div>
-        </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script type="module" src="./src/js/index.js"></script>
-    <script type="module" src="./src/js/slidersHome.js"></script>
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzhp-gjeksjUKrCvu14fvTA5mAgX8noes&callback=initMap"></script>
-
+    <!--====== jquery js ======-->
+    <!--====== jquery js ======-->
+    <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <!--====== Bootstrap js ======-->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <!--====== Slick js ======-->
+    <script src="assets/js/slick.min.js"></script>
+    <!--====== Isotope js ======-->
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <!--====== Magnific Popup js ======-->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!--====== inview js ======-->
+    <script src="assets/js/jquery.inview.min.js"></script>
+    <!--====== counterup js ======-->
+    <script src="assets/js/jquery.countTo.js"></script>
+    <!--====== Nice Select ======-->
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <!--====== Bootstrap datepicker ======-->
+    <script src="assets/js/bootstrap-datepicker.js"></script>
+    <!--====== Wow JS ======-->
+    <script src="assets/js/wow.min.js"></script>
+    <!--====== Google Map ======-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDC3Ip9iVC0nIxC6V14CKLQ1HZNF_65qEQ"></script>
+    <script src="assets/js/map.js"></script>
+    <!--====== Main js ======-->
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>

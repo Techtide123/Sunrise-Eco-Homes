@@ -984,7 +984,7 @@ header .nav-container .header-info .item .title {
 @media (max-width: 767px) {
     header .nav-container .header-info .item .title {
         color: #fff;
-        font-size: 22px;
+        font-size: 17px;
     }
 }
 
@@ -1284,7 +1284,7 @@ header.header-two .header-info .item i {
 
 @media (max-width: 767px) {
     header.header-two .header-info .item i {
-        color: #111;
+        color: #ffffff;
     }
 }
 
