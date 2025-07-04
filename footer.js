@@ -88,4 +88,30 @@ document.write(`
         </div>
     </div>
 </footer>
+<!--Start of Tawk.to Script-->
+    <script>
+    (function (w, d, s, u) {
+    w.gbwawc = {
+    url: u,
+    options: {
+            waId: "+91 8249724355",
+            siteName: "Sunrise Eco Homes",
+            siteTag: "Available",
+            siteLogo: "https://sunrise-eco-homes.vercel.app/sunrise-img/logo.jpg",
+            widgetPosition: "LEFT",
+            triggerMessage: "Need any Help ",
+            welcomeMessage: "Welcome to Sunrise Eco Homes.. How can we help you ?",
+            brandColor: "#25D366",
+            messageText: "",
+
+        },
+    };
+    var h = d.getElementsByTagName(s)[0],
+    j = d.createElement(s);
+    j.async = true;
+    j.src = u + "/whatsapp-widget.min.js?_=" + Math.random();
+    h.parentNode.insertBefore(j, h);
+    })(window, document, "script", "https://waw.gallabox.com");
+    </script>
+<!--End of Tawk.to Script-->
 `);
