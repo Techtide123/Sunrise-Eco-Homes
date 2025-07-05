@@ -27,8 +27,8 @@ document.write(`
                         <h4 class="widget-title mb-3">Quick Links</h4>
                         <ul style="list-style: none; padding-left: 0; font-size: 14px; line-height: 1.9;">
                             <li><a href="index.html" style="color: #ccc;">Home</a></li>
-                            <li><a href="" style="color: #ccc;">Services</a></li>
-                            <li><a href="#" style="color: #ccc;">About Us</a></li>
+                            <li><a href="index.html#facilities" style="color: #ccc;">Services</a></li>
+                            <li><a href="about-us.html" style="color: #ccc;">About Us</a></li>
                             <li><a href="contact.html" style="color: #ccc;">Contact Us </a></li>
                             <li><a href="index.html#rooms" style="color: #ccc;">Rooms</a></li>
                             <li><a href="gallery.html" style="color: #ccc;">Gallery</a></li>

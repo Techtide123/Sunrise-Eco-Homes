@@ -1,13 +1,18 @@
 document.write(`
-        <header class="header-absolute sticky-header inner-page">
+           <header class="header-absolute header-two sticky-header">
         <div class="container container-custom-one">
-            <div class="nav-container d-flex align-items-center justify-content-between">
+            <div class="nav-container d-flex align-items-center justify-content-between justify-content-lg-around">
+                <!-- Site Logo -->
+                <div class="site-logo">
+                    <a href="index.html" class="main-logo"><img src="sunrise-img/logo.jpg" alt="Logo"
+                            style="width: 110px;border-radius: 5px;"></a>
+                    <a href="index.html" class="sticky-logo"><img src="sunrise-img/logo.jpg" alt="Logo"
+                            style="width: 110px;"></a>
+                </div>
+
+
                 <!-- Main Menu -->
                 <div class="nav-menu d-lg-flex align-items-center">
-                 <!-- Site Logo -->
-                <div class="site-logo">
-                    <a href="index.html"><img src="assets/img/logo.png" alt="Logo"></a>
-                </div>
 
                     <!-- Navbar Close Icon -->
                     <div class="navbar-close">
@@ -15,35 +20,25 @@ document.write(`
                     </div>
 
                     <!-- Off canvas Menu  -->
-                    <div class="toggle">
+                    <!-- <div class="toggle">
                         <a href="#" id="offCanvasBtn"><i class="fal fa-bars"></i></a>
-                    </div>
+                    </div> -->
                     <!-- Mneu Items -->
                     <div class="menu-items">
                         <ul>
                             <li>
                                 <a href="index.html">Home</a>
-                                <ul class="submenu">
-                                    <li><a href="index.html">Home One</a></li>
-                                    <li><a href="index-2.html">Home Two</a></li>
-                                    <li><a href="index-3.html">Home Three</a></li>
-                                </ul>
+
                             </li>
-                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="about-us.html">About Us</a></li>
                             <li>
-                                <a href="room-grid.html">Rooms</a>
+                                <a href="index.html#rooms">Rooms</a>
                                 <ul class="submenu">
-                                    <li><a href="room-grid.html">Room Grid</a></li>
-                                    <li><a href="room-list.html">Room List</a></li>
-                                    <li><a href="room-details.html">Room Details</a></li>
+                                    <li><a href="deluxe-room.html">Deluxe Room</a></li>
                                 </ul>
                             </li>
-                            <li>
-                                <a href="news.html">News</a>
-                                <ul class="submenu">
-                                    <li><a href="news-details.html">News Details</a></li>
-                                </ul>
-                            </li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="index.html#facilities">Services</a></li>
                             <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </div>
@@ -52,24 +47,24 @@ document.write(`
                     <div class="nav-pushed-item"></div>
                 </div>
 
-               
+
 
                 <!-- Header Info Pussed To Menu Wrap -->
                 <div class="nav-push-item">
                     <!-- Header Info -->
                     <div class="header-info d-lg-flex align-items-center">
                         <div class="item">
-                            <i class="fal fa-behance"></i>
+                            <i class="fal fa-phone"></i>
                             <span>Phone Number</span>
-                            <a href="tel:+90898787709">
-                                <h5 class="title">+908 987 877 09</h5>
+                            <a href="tel:+91 8249724355">
+                                <h5 class="title">+91 8249724355</h5>
                             </a>
                         </div>
                         <div class="item">
                             <i class="fal fa-envelope"></i>
                             <span>Email Address</span>
-                            <a href="mailto:info@webmail.com">
-                                <h5 class="title">info@webmail.com</h5>
+                            <a href="mailto:sunriseecohome@gmail.com">
+                                <h5 class="title">sunriseecohome@gmail.com</h5>
                             </a>
                         </div>
                     </div>
