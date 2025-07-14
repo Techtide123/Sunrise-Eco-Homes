@@ -76,7 +76,7 @@ document.write(`
                     <p class="mb-0" style="color: #aaa; font-size: 13px;">© 2025 Sunrise Eco Homes. All rights reserved.</p>
                 </div>
                 <div class="col-md-4 mb-2 mb-md-0" style="text-align: center;">
-                    <p class="mb-0" style="color: #aaa; font-size: 13px;">Powered By <a href="https://tripstar.co.in/index.html" style="color: #aaa;"><img src="https://tripstar.co.in/assets/my-img/logo.png" alt="Logo" style="max-width: 100px;"></a></p>
+                    <p class="mb-0" style="color: #aaa; font-size: 13px;">Powered By <a href="https://tripstar.co.in/index.html" style="color: #aaa;"><img src="https://tripstar.co.in/assets/my-img/logo.png" alt="Logo" style="max-width: 70px;"></a></p>
                 </div>
                 <div class="col-md-4 text-md-end">
                     <ul class="d-flex justify-content-center justify-content-md-end list-unstyled gap-3 mb-0" style="font-size: 13px;">
