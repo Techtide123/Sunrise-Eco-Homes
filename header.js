@@ -40,6 +40,7 @@ document.write(`
                             <li><a href="gallery.html">Gallery</a></li>
                             <li><a href="index.html#facilities">Services</a></li>
                             <li><a href="contact.html">Contact</a></li>
+                            <li><a href="policy.html">Our Policy</a></li>
                         </ul>
                     </div>
 
@@ -77,4 +78,4 @@ document.write(`
             </div>
         </div>
     </header>
-    `)
+    `);

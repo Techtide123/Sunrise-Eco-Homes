@@ -80,8 +80,8 @@ document.write(`
                 </div>
                 <div class="col-md-4 text-md-end">
                     <ul class="d-flex justify-content-center justify-content-md-end list-unstyled gap-3 mb-0" style="font-size: 13px;">
-                        <li><a href="#" style="color: #aaa;">Terms of Use</a></li>
-                        <li><a href="#" style="color: #aaa;">Privacy Policy</a></li>
+                        <li><a href="policy.html" style="color: #aaa;">Terms of Use</a></li>
+                        <li><a href="policy.html" style="color: #aaa;">Privacy Policy</a></li>
                     </ul>
                 </div>
             </div>
