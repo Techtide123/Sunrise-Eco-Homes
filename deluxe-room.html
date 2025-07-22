@@ -34,11 +34,12 @@
     <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css">
 
     <style>
-        .room-img-slider{
+        .room-img-slider {
             height: 500px;
             object-fit: cover;
         }
-        .room-img-small{
+
+        .room-img-small {
             height: 100px;
             object-fit: cover;
         }
@@ -212,7 +213,7 @@
                             arrangements, and an Expert Team ready to assist. Whether for business or leisure,
                             everything you need is right here.
                         </p>
-                  
+
                         <div class="room-rules clearfix mb-60">
                             <h3 class="subtitle">House Rules</h3>
                             <ul class="room-rules-list">
@@ -236,14 +237,14 @@
                                 recognized by local authorities.
                             </p>
                         </div>
-                      
+
                     </div>
                 </div>
                 <!-- form -->
                 <div class="col-lg-4">
                     <div class="room-booking-form">
                         <h5 class="title">Check Availability</h5>
-                        <form action="#">
+                        <form id="availabilityForm" action="#">
                             <div class="input-group input-group-two left-icon mb-20">
                                 <label for="arrival-date">Check In</label>
                                 <div class="icon"><i class="fal fa-calendar-alt"></i></div>
@@ -264,15 +265,16 @@
                                     <option value="5">5 Rooms</option>
                                 </select>
                             </div>
-
                             <div class="input-group input-group-two left-icon mb-20">
                                 <label for="guest">Number of Guests:</label>
                                 <input type="number" id="guest" name="guest" min="1" max="15" value="2" step="1">
                             </div>
                             <div class="input-group">
-                                <button class="main-btn btn-filled">Check Availability</button>
+                                <button type="button" class="main-btn btn-filled" onclick="sendWhatsAppBooking()">Check
+                                    Availability</button>
                             </div>
                         </form>
+
                     </div>
                 </div>
             </div>
@@ -314,6 +316,26 @@
     <script src="assets/js/map.js"></script>
     <!--====== Main js ======-->
     <script src="assets/js/main.js"></script>
+    <script>
+        function sendWhatsAppBooking() {
+            const checkIn = document.getElementById('arrival-date').value;
+            const checkOut = document.getElementById('departure-date').value;
+            const rooms = document.getElementById('room').value;
+            const guests = document.getElementById('guest').value;
+
+            if (!checkIn || !checkOut || !rooms || !guests) {
+                alert("Please fill in all fields before proceeding.");
+                return;
+            }
+
+            const phoneNumber = "918249724355";
+            const message = `Hello! I would like to check availability:\n\nCheck-in: ${checkIn}\nCheck-out: ${checkOut}\nRooms: ${rooms}\nGuests: ${guests}`;
+            const encodedMessage = encodeURIComponent(message);
+            const url = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+
+            window.open(url, '_blank');
+        }
+    </script>
 
     <!-- 
     <script>
