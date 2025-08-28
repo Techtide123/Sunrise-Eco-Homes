@@ -184,7 +184,7 @@
     <section class="booking-form">
         <div class="container">
             <div class="booking-form-inner">
-                <form id="bookingForm" action="#">
+                <form id="bookingForm" action="booking.html">
                     <div class="row align-items-end">
                         <div class="col-lg-3 col-md-6">
                             <div class="inputs-filed mt-30">
@@ -514,7 +514,7 @@
                             comfort and nature. Thoughtfully designed with cozy interiors, modern amenities, and scenic
                             views, each room is your private retreat to relax, recharge, and reconnect with nature.
                         </p>
-                        <a href="https://wa.me/918249724355?text=Hello! I'd like to check availability. Check-in: Check-out: Guests: Room Type: Deluxe Room"
+                        <a href="booking.html"
                             class=" main-btn btn-filled mt-40">Book now</a>
                         <a href="deluxe-room.html" class="main-btn btn-filled mt-40">View More</a>
                     </div>
@@ -642,6 +642,9 @@
                                 style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;"><a
                                     class="main-btn btn-border" href="about-us.html">Learn
                                     More</a></li>
+                            <li class="wow fadeInUp" data-wow-delay=".5s"
+                                style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;"><a
+                                    class="main-btn btn-border" href="booking.html">Book Now</a></li>
                         </ul>
                     </div>
                 </div>
@@ -820,19 +823,19 @@
     <script>
 
         function sendWhatsAppMessage() {
-            const arrivalDate = document.getElementById('arrival-date').value;
-            const departureDate = document.getElementById('departure-date').value;
-            const guests = document.getElementById('guests').value;
+            // const arrivalDate = document.getElementById('arrival-date').value;
+            // const departureDate = document.getElementById('departure-date').value;
+            // const guests = document.getElementById('guests').value;
 
-            if (!arrivalDate || !departureDate || !guests) {
-                alert("Please fill in all fields before proceeding.");
-                return;
-            }
+            // if (!arrivalDate || !departureDate || !guests) {
+            //     alert("Please fill in all fields before proceeding.");
+            //     return;
+            // }
 
-            const phoneNumber = "918249724355";
-            const message = `Hello! I'd like to check availability.\n\nCheck-in: ${arrivalDate}\nCheck-out: ${departureDate}\nGuests: ${guests}\nRoom Type:-`;
-            const encodedMessage = encodeURIComponent(message);
-            const url = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+            // const phoneNumber = "918249724355";
+            // const message = `Hello! I'd like to check availability.\n\nCheck-in: ${arrivalDate}\nCheck-out: ${departureDate}\nGuests: ${guests}\nRoom Type:-`;
+            // const encodedMessage = encodeURIComponent(message);
+            const url = `booking.html`;
 
             window.open(url, '_blank');
         }
